@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+}
+#root {
+  margin: 0 auto;
+}
+:root {
+  /* colors */
+  --
+  /* font-size */
+  --big-header: 50px;
+  --small-header: 28px;
+  --normal: 16px;
+  --small: 11px;
+  /* font-weight */
+  --bold: 700;
+  --semibold: 600;
+  --medium: 500;
+  --regular: 400;
+}
