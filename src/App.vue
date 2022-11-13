@@ -1,8 +1,9 @@
 <template>
-  <h1>Hello world</h1>
+  <Home />
 </template>
 
 <script setup>
+import Home from "./views/Home.vue";
 </script>
 
 <style scoped>
