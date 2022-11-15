@@ -22,8 +22,4 @@ export default {
 </script>
 
 <style>
-/* #container-wrapper {
-  width: 90%;
-  margin: 0 auto;
-} */
 </style>
