@@ -39,8 +39,10 @@ a {
   --section-header-small: 2rem; /* 32px */
   --topic-normal: 1.5rem; /* 24px */
   --topic-small: 1.25rem; /* 20px */
+  --article-author: 0.625rem;
   --article-title: 1rem; /* 16px */
   --article-body: 0.813rem; /* 13px */
+  --footer: 0.9375rem; /* 15px */
   /* font-weight */
   --bold: 700;
   --regular: 400;
