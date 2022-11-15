@@ -1,5 +1,5 @@
-<template @keydown.esc="close">
-  <div id="overlay" @click="outsideClick" @keydown.esc="close">
+<template>
+  <div id="overlay" @click="outsideClick">
     <nav>
       <a href="#">Home</a>
       <a href="#">About</a>
@@ -48,5 +48,21 @@ nav {
   border-radius: 4px;
 
   font-size: var(--navitem-mobile);
+}
+
+@media (min-width: 768px) {
+  #overlay {
+    width: fit-content;
+    height: auto;
+    background: none;
+  }
+
+  nav {
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+
+    font-size: var(--navitem-desktop);
+  }
 }
 </style>
