@@ -1,5 +1,5 @@
-<template>
-  <div class="overlay">
+<template @keydown.esc="close">
+  <div id="overlay" @click="outsideClick" @keydown.esc="close">
     <nav>
       <a href="#">Home</a>
       <a href="#">About</a>
@@ -13,11 +13,21 @@
 <script>
 export default {
   name: "CreateNavigation",
+  methods: {
+    outsideClick: function (e) {
+      if (e.target.id === "overlay") {
+        this.$emit("close");
+      }
+    },
+    close: function () {
+      this.$emit("close");
+    },
+  },
 };
 </script>
 
 <style scoped>
-.overlay {
+#overlay {
   width: 100vw;
   height: calc(100vh - 64px);
 
