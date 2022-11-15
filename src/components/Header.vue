@@ -1,7 +1,7 @@
 <template>
   <header class="container">
     <div class="mobile-wrapper">
-      <img src="../assets/logo.svg" alt="Easybank logo" />
+      <img :src="easybankLogoblack" alt="Easybank logo" />
       <img
         class="menu"
         src="../assets/icon-hamburger.svg"
@@ -17,10 +17,14 @@
 
 <script>
 import CreateNavigation from "./CreateNavigation.vue";
+
+import LogoBlack from "../assets/logo-black.svg";
+
 export default {
   name: "Header",
   data() {
     return {
+      easybankLogoblack: LogoBlack,
       isMenuOpen: false,
     };
   },
