@@ -1,22 +1,22 @@
 <template>
-  <header-component />
   <intro-section />
   <!-- <div id="container-wrapper"> -->
   <benefits-sections />
+  <articles-section />
   <!-- </div> -->
 </template>
 
 <script>
-import Header from "../components/Header.vue";
 import Intro from "../components/Intro.vue";
 import Benefits from "../components/Benefits.vue";
+import Articles from "../components/Articles.vue";
 
 export default {
   name: "Home",
   components: {
-    "header-component": Header,
     "intro-section": Intro,
     "benefits-sections": Benefits,
+    "articles-section": Articles,
   },
 };
 </script>
