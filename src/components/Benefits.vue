@@ -60,7 +60,7 @@ export default {
           image: ApiIcon,
           imageSrc: "chipset representation",
           title: "Open API",
-          text: "Manage your savings, investments, pension, and much more from account. Tracking your money has never been easier.",
+          text: "Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.",
         },
       ],
     };
@@ -78,6 +78,7 @@ section {
   width: 90%;
   margin: 0 auto;
 }
+
 .section-header {
   display: flex;
   flex-direction: column;
@@ -90,7 +91,7 @@ section {
 
 .section-header > h1 {
   color: var(--dark-blue);
-  font-size: var(--section-header-small);
+  font-size: var(--section-header-mobile);
   font-weight: var(--light);
 }
 
@@ -103,5 +104,38 @@ section {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 6rem 0;
+  }
+
+  .wrapper {
+    max-width: 69.375rem;
+  }
+
+  .section-header {
+    width: 39.688rem;
+
+    align-items: flex-start;
+    gap: 1rem;
+
+    text-align: start;
+  }
+
+  .section-header > h1 {
+    font-size: var(--section-header-desktop);
+  }
+
+  .section-header > p {
+    font-size: var(--content-text-desktop);
+  }
+
+  .section-body {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 </style>

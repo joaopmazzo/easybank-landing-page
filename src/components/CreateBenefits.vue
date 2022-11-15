@@ -30,11 +30,25 @@ div {
 
 h2 {
   color: var(--dark-blue);
-  font-size: var(--topic-small);
+  font-size: var(--topic-mobile);
   font-weight: var(--light);
 }
 
 p {
   color: var(--grayish-blue);
+}
+
+@media (min-width: 768px) {
+  div {
+    width: 15.938rem;
+
+    align-items: flex-start;
+
+    text-align: start;
+  }
+
+  h2 {
+    font-size: var(--topic-desktop);
+  }
 }
 </style>
