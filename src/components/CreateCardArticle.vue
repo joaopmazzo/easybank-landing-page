@@ -24,7 +24,8 @@ export default {
 
 <style scoped>
 .card {
-  width: 327px;
+  width: 20.438rem;
+  height: 24.688rem;
 
   display: flex;
   flex-direction: column;
@@ -36,8 +37,8 @@ export default {
 }
 
 img {
-  width: 327px;
-  height: 200px;
+  width: 20.438rem;
+  height: 12.5rem;
 }
 
 .card-body {
@@ -45,7 +46,7 @@ img {
   flex-wrap: wrap;
   gap: 0.5rem;
 
-  padding: 1.5rem 2rem;
+  padding: 1.563rem 2rem;
 }
 
 .author {
@@ -57,10 +58,24 @@ img {
   color: var(--dark-blue);
   font-size: var(--article-title);
   font-weight: var(--light);
+  line-height: 1.25rem;
+  letter-spacing: -0.013rem;
 }
 
 .text {
   color: var(--grayish-blue);
   font-size: var(--article-body);
+  line-height: 1.125rem;
+  letter-spacing: -0.013rem;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 255px;
+  }
+
+  .card-body {
+    padding: 1.5rem 1.5rem;
+  }
 }
 </style>

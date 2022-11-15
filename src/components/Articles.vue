@@ -80,7 +80,7 @@ section {
 
 .wrapper > h1 {
   color: var(--dark-blue);
-  font-size: var(--section-header-small);
+  font-size: var(--section-header-mobile);
   font-weight: var(--light);
   text-align: center;
 
@@ -92,5 +92,27 @@ section {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 5rem 0;
+  }
+
+  .wrapper {
+    width: 69.375rem;
+  }
+
+  .wrapper > h1 {
+    font-size: var(--section-header-desktop);
+    text-align: start;
+
+    margin-bottom: 2.5rem;
+  }
+
+  .section-body {
+    flex-direction: row;
+    gap: 1.875rem;
+  }
 }
 </style>
