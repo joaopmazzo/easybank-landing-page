@@ -33,10 +33,12 @@ a {
   /* font-size */
   --navitem-mobile: 1.125rem; /* 18px */
   --navitem-desktop: 0.875rem; /* 14px */
-  --big-header: 4rem; /* 64px */
+  --big-header: 3.5rem; /* 56px */
   --small-header: 2.5rem; /* 40px */
   --section-header-normal: 2.5rem; /* 40px */
   --section-header-small: 2rem; /* 32px */
+  --content-text-desktop: 1.125rem; /* 18px */
+  --content-text-mobile: 1rem; /* 18px */
   --topic-normal: 1.5rem; /* 24px */
   --topic-small: 1.25rem; /* 20px */
   --article-author: 0.625rem;
@@ -47,11 +49,6 @@ a {
   --bold: 700;
   --regular: 400;
   --light: 300;
-}
-
-.container {
-  width: 375px;
-  margin: 0 auto;
 }
 
 @media screen and (min-width: 640px) {
