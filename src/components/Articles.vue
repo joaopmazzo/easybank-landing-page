@@ -100,7 +100,8 @@ section {
   }
 
   .wrapper {
-    width: 69.375rem;
+    width: 100%;
+    max-width: 69.375rem;
   }
 
   .wrapper > h1 {
@@ -112,6 +113,9 @@ section {
 
   .section-body {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
     gap: 1.875rem;
   }
 }
