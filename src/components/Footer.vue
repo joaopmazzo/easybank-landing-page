@@ -1,24 +1,30 @@
 <template>
   <footer>
-    <img class="logo" :src="easybankLogoWhite" alt="EasybakLogo" />
-    <div class="social-network">
-      <img
-        v-for="socialNetworkIcon in socialNetworkIcons"
-        :key="socialNetworkIcon.imageSrc"
-        :src="socialNetworkIcon.imageSrc"
-        :alt="socialNetworkIcon.imageAlt"
-      />
+    <div class="wrapper">
+      <img :src="easybankLogoWhite" alt="EasybakLogo" />
+      <div>
+        <div class="social-network">
+          <img
+            v-for="socialNetworkIcon in socialNetworkIcons"
+            :key="socialNetworkIcon.imageSrc"
+            :src="socialNetworkIcon.imageSrc"
+            :alt="socialNetworkIcon.imageAlt"
+          />
+        </div>
+      </div>
+      <div class="footer-nav">
+        <a href="">About Us</a>
+        <a href="">Contact</a>
+        <a href="">Blog</a>
+        <a href="">Careers</a>
+        <a href="">Support</a>
+        <a href="">Privacy Policy</a>
+      </div>
     </div>
-    <div class="footer-nav">
-      <a href="">About Us</a>
-      <a href="">Contact</a>
-      <a href="">Blog</a>
-      <a href="">Careers</a>
-      <a href="">Support</a>
-      <a href="">Privacy Policy</a>
+    <div class="wrapper">
+      <button-component text="Request Invite" />
+      <span class="copyright">&copy; Easybank. All Rights Reserved</span>
     </div>
-    <button-component text="Request Invite" />
-    <span class="copyright">&copy; Easybank. All Rights Reserved</span>
   </footer>
 </template>
 
@@ -67,20 +73,25 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 footer {
   background-color: var(--dark-blue);
+
+  padding: 2.5rem 0;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.wrapper {
+  margin: 0 auto;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  
   gap: 2rem;
-
-  padding: 2.5rem 0;
-}
-
-.logo {
-  fill: #fff;
 }
 
 .social-network {
@@ -105,5 +116,22 @@ footer {
   color: var(--white);
   font-size: var(--footer);
   opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  footer {
+    height: 200px;
+    padding: 3rem;
+  }
+
+  .wrapper:first-of-type {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+    height: 100%;
+  }
 }
 </style>
