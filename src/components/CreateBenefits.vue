@@ -41,6 +41,7 @@ p {
 @media (min-width: 768px) {
   div {
     width: 15.938rem;
+    height: 17.375rem;
 
     align-items: flex-start;
 
