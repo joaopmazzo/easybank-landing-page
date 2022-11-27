@@ -35,12 +35,12 @@ a {
   --navitem-desktop: 0.875rem; /* 14px */
   --big-header: 3.5rem; /* 56px */
   --small-header: 2.5rem; /* 40px */
-  --section-header-normal: 2.5rem; /* 40px */
-  --section-header-small: 2rem; /* 32px */
+  --section-header-desktop: 2.5rem; /* 40px */
+  --section-header-mobile: 2rem; /* 32px */
   --content-text-desktop: 1.125rem; /* 18px */
   --content-text-mobile: 1rem; /* 18px */
-  --topic-normal: 1.5rem; /* 24px */
-  --topic-small: 1.25rem; /* 20px */
+  --topic-desktop: 1.5rem; /* 24px */
+  --topic-mobile: 1.25rem; /* 20px */
   --article-author: 0.625rem;
   --article-title: 1rem; /* 16px */
   --article-body: 0.813rem; /* 13px */
