@@ -112,6 +112,7 @@ section {
   }
 
   .wrapper {
+    width: 100%;
     max-width: 69.375rem;
   }
 
@@ -134,8 +135,10 @@ section {
 
   .section-body {
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 1.875rem;
   }
 }
 </style>
