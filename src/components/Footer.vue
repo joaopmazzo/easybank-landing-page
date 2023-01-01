@@ -1,29 +1,27 @@
 <template>
   <footer>
     <div class="wrapper">
-      <img :src="easybankLogoWhite" alt="EasybakLogo" />
-      <div>
-        <div class="social-network">
-          <img
-            v-for="socialNetworkIcon in socialNetworkIcons"
-            :key="socialNetworkIcon.imageSrc"
-            :src="socialNetworkIcon.imageSrc"
-            :alt="socialNetworkIcon.imageAlt"
-          />
+      <div class="nav">
+        <div class="footer-brand-logos">
+          <img :src="easybankLogoWhite" alt="EasybakLogo" />
+          <div class="social-network">
+            <img v-for="socialNetworkIcon in socialNetworkIcons" :key="socialNetworkIcon.imageSrc"
+              :src="socialNetworkIcon.imageSrc" :alt="socialNetworkIcon.imageAlt" />
+          </div>
+        </div>
+        <div class="footer-nav">
+          <a href="">About Us</a>
+          <a href="">Contact</a>
+          <a href="">Blog</a>
+          <a href="">Careers</a>
+          <a href="">Support</a>
+          <a href="">Privacy Policy</a>
         </div>
       </div>
-      <div class="footer-nav">
-        <a href="">About Us</a>
-        <a href="">Contact</a>
-        <a href="">Blog</a>
-        <a href="">Careers</a>
-        <a href="">Support</a>
-        <a href="">Privacy Policy</a>
+      <div class="button">
+        <button-component text="Request Invite" />
+        <span class="copyright">&copy; Easybank. All Rights Reserved</span>
       </div>
-    </div>
-    <div class="wrapper">
-      <button-component text="Request Invite" />
-      <span class="copyright">&copy; Easybank. All Rights Reserved</span>
     </div>
   </footer>
 </template>
@@ -78,19 +76,43 @@ footer {
   background-color: var(--dark-blue);
 
   padding: 2.5rem 0;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
 
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
 }
-.wrapper {
+
+.button {
   margin: 0 auto;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
+  gap: 2rem;
+}
+
+.nav {
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2rem
+}
+
+.footer-brand-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   gap: 2rem;
 }
 
@@ -107,7 +129,7 @@ footer {
   gap: 0.5rem;
 }
 
-.footer-nav > a {
+.footer-nav>a {
   color: var(--white);
   font-size: var(--footer);
 }
@@ -124,14 +146,39 @@ footer {
     padding: 3rem;
   }
 
-  .wrapper:first-of-type {
+  .wrapper {
+    max-width: 69.375rem;
+    width: 100%;
+    height: 100%;
+
+    justify-content: space-between;
+  }
+
+  .button {
+    margin: 0;
+  }
+
+  .nav {
+    margin: 0;
+
     flex-wrap: wrap;
     height: 100%;
   }
 
+  .footer-brand-logos {
+    height: 100%;
+    justify-content: space-between;
+  }
+
   .footer-nav {
     flex-wrap: wrap;
+
     height: 100%;
+  }
+
+  .copyright {
+    height: 100%;
+    justify-content: space-between;
   }
 }
 </style>
